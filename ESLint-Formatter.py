@@ -246,6 +246,6 @@ class PluginUtils:
     stderr = stderr.decode('utf-8')
 
     if stderr:
-      raise Exception('Error: %s' % stderr)
+      return stderr
     else:
       return stdout
