@@ -69,7 +69,7 @@ class FormatEslintCommand(sublime_plugin.TextCommand):
 
   def run_script_on_file(self, data):
     try:
-      dirname = None
+      dirname = os.path.dirname(data)
       node_path = PluginUtils.get_node_path()
       eslint_path = PluginUtils.get_eslint_path(dirname)
 
